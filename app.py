@@ -3,7 +3,6 @@ from openai import OpenAI
 import os
 
 
-load_dotenv()  
 os.environ['OPENAI_API_KEY'] = st.secrets.apikey
 
 class FormulaGen:
