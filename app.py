@@ -2,6 +2,11 @@ import streamlit as st
 from openai import OpenAI
 import os
 
+from PIL import Image
+import streamlit as st
+
+image = Image.open("lyzr-logo.png")
+st.image(image, caption="", width=150)
 
 os.environ['OPENAI_API_KEY'] = st.secrets.apikey
 
